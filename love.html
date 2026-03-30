@@ -1,0 +1,120 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Peehu Forever 💝 | Harsh</title>
+
+<style>
+body {
+    margin:0;
+    font-family: serif;
+    background: linear-gradient(135deg,#0f0f23,#4a148c);
+    color:#fff;
+    text-align:center;
+}
+
+.container {
+    padding:40px;
+}
+
+button {
+    padding:15px 25px;
+    margin:10px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    background:#ff4081;
+    color:white;
+}
+
+.content {
+    display:none;
+    padding:40px;
+}
+
+img {
+    width:250px;
+    border-radius:20px;
+    margin:10px;
+}
+
+.nav {
+    position:fixed;
+    top:10px;
+    left:10px;
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<button class="nav" onclick="home()">🏠 Home</button>
+
+<div id="home" class="container">
+    <h1>My Dearest Peehu 💖</h1>
+    <p>Click below to explore our love ❤️</p>
+
+    <button onclick="show('letter')">💌 Love Letter</button>
+    <button onclick="show('photos')">📸 Photos</button>
+    <button onclick="show('poem')">✨ Poem</button>
+    <button onclick="show('promise')">💍 Promise</button>
+</div>
+
+<div id="letter" class="content">
+    <h2>My Love 💕</h2>
+    <p>
+        Tum meri life ka sabse beautiful part ho.  
+        Tumhari smile meri duniya hai ❤️  
+        I love you forever Peehu 💖
+    </p>
+</div>
+
+<div id="photos" class="content">
+    <h2>Our Memories 📸</h2>
+    <img src="https://i.ibb.co/Wv98Xykp/20241220-135045.jpg">
+    <img src="https://i.ibb.co/Xr0vdcbS/20241220-135100.jpg">
+    <img src="https://i.ibb.co/Jj3ym59K/20241220-135114.jpg">
+</div>
+
+<div id="poem" class="content">
+    <h2>For Peehu 💕</h2>
+    <p>
+        P - Princess of my heart 💖<br>
+        E - Every moment with you special ✨<br>
+        E - Endless love forever ❤️<br>
+        H - Happiness begins with you 😊<br>
+        U - Universe is you for me 🌍
+    </p>
+</div>
+
+<div id="promise" class="content">
+    <h2>My Promise 💍</h2>
+    <p>
+        Main hamesha tumse pyar karunga ❤️  
+        Har situation me tumhare saath rahunga 💯  
+        Forever yours ❤️
+    </p>
+</div>
+
+<script>
+function show(id){
+    document.getElementById("home").style.display="none";
+    document.querySelectorAll(".content").forEach(e=>e.style.display="none");
+    document.getElementById(id).style.display="block";
+    document.querySelector(".nav").style.display="block";
+}
+
+function home(){
+    document.getElementById("home").style.display="block";
+    document.querySelectorAll(".content").forEach(e=>e.style.display="none");
+    document.querySelector(".nav").style.display="none";
+}
+</script>
+
+</body>
+</html>
+```
